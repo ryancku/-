@@ -7,6 +7,6 @@ soup = BeautifulSoup(res.text, "html.parser")
 
 for i in soup.findAll('a'):
     count += 1
-    if "�Яq".decode('big5') in i.get_text():
+    if "正".decode('big5') in i.get_text():
         print i, count
 
