@@ -1,2 +1,5 @@
-# -
-python; big5; Unicode; utf8
+問題:
+    在Python寫爬蟲程式，需要抓取中文字符關鍵字時，因為中文編碼的問題而造成抓取不到內容的情況。
+    
+解決:
+    把欲抓取的關鍵字decode('big5')，即可脫去big5的外衣，變為Unicode。
